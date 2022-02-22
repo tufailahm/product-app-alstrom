@@ -8,5 +8,6 @@ public interface ProductDAO {
 	public void deleteProduct(int productId);
 	public void searchByProductId(int productId);
 	public void searchByProductName(String productName);
+	public void searchProductByPrice(int lowerPrice,int upperPrice);
 	public void printAllProducts();
 }
