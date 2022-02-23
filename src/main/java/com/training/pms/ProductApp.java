@@ -61,6 +61,12 @@ public class ProductApp {
 				System.out.println("Congratulations, your product : " + productName + " saved successfully");
 
 				break;
+				
+			case 2:
+				System.out.println("Please enter product id to delete :");
+				productId = scanner.nextInt();
+				productDAO.deleteProduct(productId);
+				break;
 			case 3:
 				// update product section
 				System.out.println("WELCOME TO UPDATE PRODUCT SECTION ");
